@@ -16,7 +16,7 @@ public class Rate : ScriptableObject
 [System.Serializable]
 public class RateInfo
 {
-    public int common;
-    public int rare;
-    public int superRare;
+    public float common;
+    public float rare;
+    public float superRare;
 }

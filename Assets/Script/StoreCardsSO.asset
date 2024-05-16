@@ -51,3 +51,4 @@ MonoBehaviour:
   - id: 12
     cardSprite: {fileID: -434558746, guid: 85fb6373b560b92498c58efed10644a2, type: 3}
     material: {fileID: 0}
+  totalCard: 12

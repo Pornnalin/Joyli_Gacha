@@ -10,6 +10,9 @@ public class StoreCards : ScriptableObject
     public List<CardInfo> rareCards;
     public List<CardInfo> superRareCards;
     //  public Sprite sss;
+    public int totalCard;
+
+
 
     [ContextMenu("SortID")]
     public void SortID()
@@ -25,9 +28,11 @@ public class StoreCards : ScriptableObject
                 for (int k = 0; k < superRareCards.Count; k++)
                 {
                     superRareCards[k].id = i + j + k + 3;
+                    totalCard = i + j + k + 3;
                 }
             }
         }
+        
     }
 }
 [System.Serializable]

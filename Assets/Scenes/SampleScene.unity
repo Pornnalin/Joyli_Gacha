@@ -819,10 +819,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rateSO: {fileID: 11400000, guid: 3bacc07cae2485c46ba424b025bf986f, type: 2}
   storeCardsSO: {fileID: 11400000, guid: 05170f883e238be43bc6bbe18eebd1ca, type: 2}
-  amountCard: 2
-  cardPrefab: {fileID: 6012917789721857552, guid: f7730dba78ef5a3448bc2a4b78df9753, type: 3}
+  amountCard: 100
+  cardPrefab: {fileID: 5356684098742024474, guid: f319168c52638d64996feb45c38c9e7f, type: 3}
   parent: {fileID: 2012428012}
   cardList: []
+  myCollectionList: []
 --- !u!4 &1684579368
 Transform:
   m_ObjectHideFlags: 0
