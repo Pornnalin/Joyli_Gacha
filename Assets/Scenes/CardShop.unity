@@ -1102,7 +1102,7 @@ GameObject:
   - component: {fileID: 1372520850}
   - component: {fileID: 1372520849}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: Image (1)--do not forget to delete
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
