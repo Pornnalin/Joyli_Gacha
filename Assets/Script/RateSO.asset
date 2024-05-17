@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: RateSO
   m_EditorClassIdentifier: 
   setRate:
-    common: 99.85
-    rare: 0.1
-    superRare: 0.05
+    common: 89
+    rare: 10
+    superRare: 1
   commonRate:
     common: 0
     rare: 0
