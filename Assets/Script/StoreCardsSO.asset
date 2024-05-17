@@ -15,40 +15,40 @@ MonoBehaviour:
   commonCards:
   - id: 1
     cardSprite: {fileID: -1588999452, guid: 85fb6373b560b92498c58efed10644a2, type: 3}
-    material: {fileID: 0}
+    material: {fileID: 2100000, guid: deaf1bbda40922b479990e653b359c47, type: 2}
   - id: 2
     cardSprite: {fileID: -1730367618, guid: 85fb6373b560b92498c58efed10644a2, type: 3}
-    material: {fileID: 0}
+    material: {fileID: 2100000, guid: d0ced1af6115166428e5ab8c7fa605d3, type: 2}
   - id: 3
     cardSprite: {fileID: -1730367618, guid: 85fb6373b560b92498c58efed10644a2, type: 3}
-    material: {fileID: 0}
+    material: {fileID: 2100000, guid: f39adb486e7cef842825a47066d80fc7, type: 2}
   - id: 4
     cardSprite: {fileID: -1730367618, guid: 85fb6373b560b92498c58efed10644a2, type: 3}
-    material: {fileID: 0}
+    material: {fileID: 2100000, guid: 27719287ba0284d49a2c57cbff00e739, type: 2}
   - id: 5
     cardSprite: {fileID: -1730367618, guid: 85fb6373b560b92498c58efed10644a2, type: 3}
-    material: {fileID: 0}
+    material: {fileID: 2100000, guid: b43678dbda8e54a4b9b0a293cc231174, type: 2}
   - id: 6
     cardSprite: {fileID: -1730367618, guid: 85fb6373b560b92498c58efed10644a2, type: 3}
-    material: {fileID: 0}
+    material: {fileID: 2100000, guid: 7d0d2cae6de10c140828d2d0982874cb, type: 2}
   - id: 7
     cardSprite: {fileID: -1730367618, guid: 85fb6373b560b92498c58efed10644a2, type: 3}
-    material: {fileID: 0}
+    material: {fileID: 2100000, guid: a0286225d908c894d8666bb90ac0ec87, type: 2}
   - id: 8
     cardSprite: {fileID: -1730367618, guid: 85fb6373b560b92498c58efed10644a2, type: 3}
-    material: {fileID: 0}
+    material: {fileID: 2100000, guid: 0daccd8a26787fc4aae149a91fea052f, type: 2}
   rareCards:
   - id: 9
     cardSprite: {fileID: 592671983, guid: 85fb6373b560b92498c58efed10644a2, type: 3}
-    material: {fileID: 0}
+    material: {fileID: 2100000, guid: c02f69da3b1d58243bb7b92a9e377063, type: 2}
   - id: 10
     cardSprite: {fileID: -401529352, guid: 85fb6373b560b92498c58efed10644a2, type: 3}
-    material: {fileID: 0}
+    material: {fileID: 2100000, guid: 44b3a0f14824eb44f9cf18d7e1a0a0b3, type: 2}
   - id: 11
     cardSprite: {fileID: -401529352, guid: 85fb6373b560b92498c58efed10644a2, type: 3}
-    material: {fileID: 0}
+    material: {fileID: 2100000, guid: 057c9b5349fd2fa43aaa8bfeec8b6d2b, type: 2}
   superRareCards:
   - id: 12
     cardSprite: {fileID: -434558746, guid: 85fb6373b560b92498c58efed10644a2, type: 3}
-    material: {fileID: 0}
+    material: {fileID: 2100000, guid: 8f7fedc59766bca4d87b99ef435f5bed, type: 2}
   totalCard: 12
