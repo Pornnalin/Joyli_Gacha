@@ -391,10 +391,10 @@ TextureImporter:
       name: Joyliday Separate Part 1_12
       rect:
         serializedVersion: 2
-        x: 150
-        y: 970
-        width: 308
-        height: 278
+        x: 111
+        y: 945
+        width: 392
+        height: 334
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -622,10 +622,10 @@ TextureImporter:
       name: Joyliday Separate Part 1_23
       rect:
         serializedVersion: 2
-        x: 588
-        y: 979
-        width: 295
-        height: 261
+        x: 545
+        y: 948
+        width: 382
+        height: 332
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -643,10 +643,10 @@ TextureImporter:
       name: Joyliday Separate Part 1_24
       rect:
         serializedVersion: 2
-        x: 1026
-        y: 981
-        width: 300
-        height: 271
+        x: 982
+        y: 950
+        width: 390
+        height: 330
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
