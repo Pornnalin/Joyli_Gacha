@@ -1,0 +1,894 @@
+fileFormatVersion: 2
+guid: 6fa26b008c5b10e4b97068d1f5bc5188
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Joyliday Separate 1_0
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 7657
+        width: 1825
+        height: 792
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85b2d8ec2452bd047860ca94c4335673
+      internalID: -2141223619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joyliday Separate 1_1
+      rect:
+        serializedVersion: 2
+        x: 1978
+        y: 7653
+        width: 1850
+        height: 803
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5e489511715a6445ac15e558ceed026
+      internalID: 583277042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joyliday Separate 1_2
+      rect:
+        serializedVersion: 2
+        x: 3870
+        y: 7657
+        width: 1846
+        height: 800
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 099d5c475e9a626448a5667883ec3989
+      internalID: 1453178633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joyliday Separate 1_3
+      rect:
+        serializedVersion: 2
+        x: 5774
+        y: 7982
+        width: 467
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 007c0e4a441fdad4dbfaa00c909ac726
+      internalID: -1388322116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joyliday Separate 1_4
+      rect:
+        serializedVersion: 2
+        x: 6358
+        y: 8007
+        width: 2054
+        height: 325
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0db0cd8002f511043aac6cea7909d98b
+      internalID: 475761696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joyliday Separate 1_5
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 6569
+        width: 2421
+        height: 1049
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c01122553bd44c2458e7626745e2c662
+      internalID: -1217674118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joyliday Separate 1_6
+      rect:
+        serializedVersion: 2
+        x: 2669
+        y: 6712
+        width: 925
+        height: 753
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5944a242e4375449ace0c26887683db
+      internalID: -1468811956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joyliday Separate 1_7
+      rect:
+        serializedVersion: 2
+        x: 3703
+        y: 6715
+        width: 929
+        height: 754
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a860204f7f324d3419778e47792cec0a
+      internalID: -197590153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joyliday Separate 1_8
+      rect:
+        serializedVersion: 2
+        x: 4691
+        y: 6711
+        width: 929
+        height: 750
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bff453c9cdef8f14cb7e5dc9d05483da
+      internalID: 773047282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joyliday Separate 1_9
+      rect:
+        serializedVersion: 2
+        x: 5774
+        y: 7344
+        width: 1784
+        height: 546
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40359f5a2011812408c0b496275a1e20
+      internalID: -1664507308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joyliday Separate 1_10
+      rect:
+        serializedVersion: 2
+        x: 7662
+        y: 7382
+        width: 767
+        height: 533
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afda6540383395644809dc0d4b28ab07
+      internalID: 1861915409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joyliday Separate 1_11
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 5903
+        width: 1354
+        height: 583
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c9cb2ae56c97024da2f4b26e98e4d56
+      internalID: 459978602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joyliday Separate 1_12
+      rect:
+        serializedVersion: 2
+        x: 1644
+        y: 5903
+        width: 1350
+        height: 583
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e629974b98cf0e24fb6859c949f542be
+      internalID: 1905405736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joyliday Separate 1_13
+      rect:
+        serializedVersion: 2
+        x: 3074
+        y: 5919
+        width: 1350
+        height: 583
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c86272b6fa4f0ea41834567ca1694f92
+      internalID: 1167053572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joyliday Separate 1_14
+      rect:
+        serializedVersion: 2
+        x: 4528
+        y: 5857
+        width: 1629
+        height: 704
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 210f5a790ad4aa34f9dd5e8ee32d7b20
+      internalID: 2042977031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joyliday Separate 1_15
+      rect:
+        serializedVersion: 2
+        x: 6341
+        y: 5707
+        width: 1971
+        height: 1391
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8765861abea369646bde05611779e613
+      internalID: 137297436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joyliday Separate 1_16
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 3444
+        width: 1829
+        height: 2271
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 316db14875e81fb459122faa59bba2d6
+      internalID: -1592540508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joyliday Separate 1_17
+      rect:
+        serializedVersion: 2
+        x: 2182
+        y: 3436
+        width: 1833
+        height: 2271
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daef47f5dfa716b45ab89a71e9c22dee
+      internalID: 506822803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joyliday Separate 1_18
+      rect:
+        serializedVersion: 2
+        x: 4140
+        y: 3448
+        width: 1833
+        height: 2275
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed9c3a01ec438c849b7b01f788a7f1b6
+      internalID: -876837099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joyliday Separate 1_19
+      rect:
+        serializedVersion: 2
+        x: 6274
+        y: 3719
+        width: 1951
+        height: 1704
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c4d4ba385eb9ab41a5c3ff305d35577
+      internalID: -1106709372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joyliday Separate 1_20
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 2686
+        width: 700
+        height: 570
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b19e8430481fb3f42a4860f4c927756f
+      internalID: -222258299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joyliday Separate 1_21
+      rect:
+        serializedVersion: 2
+        x: 3986
+        y: 2978
+        width: 321
+        height: 420
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e35fedb43cb03114798db7486b0b6d30
+      internalID: 1025921928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joyliday Separate 1_22
+      rect:
+        serializedVersion: 2
+        x: 4416
+        y: 3098
+        width: 981
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8677874b73acd4439781c914aae845c
+      internalID: -1633774143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joyliday Separate 1_23
+      rect:
+        serializedVersion: 2
+        x: 5999
+        y: 3123
+        width: 492
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa84333cd76428b4abc658682df3f35c
+      internalID: 1868007390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joyliday Separate 1_24
+      rect:
+        serializedVersion: 2
+        x: 7095
+        y: 3074
+        width: 1167
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8132483d07741854891698bf827a3688
+      internalID: -1381524904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joyliday Separate 1_27
+      rect:
+        serializedVersion: 2
+        x: 5553
+        y: 2978
+        width: 317
+        height: 420
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46455fba6fac32845a637ed308e5e7af
+      internalID: 156336211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joyliday Separate 1_31
+      rect:
+        serializedVersion: 2
+        x: 6662
+        y: 2978
+        width: 316
+        height: 420
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1395b13f7a0d8b64c84e12728f2e7f31
+      internalID: 1493447550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joyliday Separate 1_51
+      rect:
+        serializedVersion: 2
+        x: 1817
+        y: 244
+        width: 6614
+        height: 2636
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34def4c8878bf3e47a226149a88b97ae
+      internalID: -1931516882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joyliday Separate 1_88
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 277
+        width: 662
+        height: 454
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5d43f4a26dabc34fad7831ca4df0f54
+      internalID: -1097082919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joyliday Separate 1_89
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 340
+        width: 371
+        height: 154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53fb279131ab910469af46feb9ff521e
+      internalID: 2037695143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joyliday Separate 1_40
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 1195
+        width: 953
+        height: 1139
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be147ea0da32a1c4db8320b852d28add
+      internalID: 1193738398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Joyliday Separate 1_0: -2141223619
+      Joyliday Separate 1_1: 583277042
+      Joyliday Separate 1_10: 1861915409
+      Joyliday Separate 1_11: 459978602
+      Joyliday Separate 1_12: 1905405736
+      Joyliday Separate 1_13: 1167053572
+      Joyliday Separate 1_14: 2042977031
+      Joyliday Separate 1_15: 137297436
+      Joyliday Separate 1_16: -1592540508
+      Joyliday Separate 1_17: 506822803
+      Joyliday Separate 1_18: -876837099
+      Joyliday Separate 1_19: -1106709372
+      Joyliday Separate 1_2: 1453178633
+      Joyliday Separate 1_20: -222258299
+      Joyliday Separate 1_21: 1025921928
+      Joyliday Separate 1_22: -1633774143
+      Joyliday Separate 1_23: 1868007390
+      Joyliday Separate 1_24: -1381524904
+      Joyliday Separate 1_25: 1152019185
+      Joyliday Separate 1_26: -1910997812
+      Joyliday Separate 1_27: 156336211
+      Joyliday Separate 1_28: 560099881
+      Joyliday Separate 1_29: 868136308
+      Joyliday Separate 1_3: -1388322116
+      Joyliday Separate 1_30: 695076416
+      Joyliday Separate 1_31: 1493447550
+      Joyliday Separate 1_32: -997207119
+      Joyliday Separate 1_33: 1904753221
+      Joyliday Separate 1_34: -1349750065
+      Joyliday Separate 1_35: 1684316643
+      Joyliday Separate 1_36: 1714889022
+      Joyliday Separate 1_37: -1082588507
+      Joyliday Separate 1_38: -1013708997
+      Joyliday Separate 1_39: -2021900969
+      Joyliday Separate 1_4: 475761696
+      Joyliday Separate 1_40: 1193738398
+      Joyliday Separate 1_41: 1381172212
+      Joyliday Separate 1_42: 488972491
+      Joyliday Separate 1_43: 944461186
+      Joyliday Separate 1_44: 314237028
+      Joyliday Separate 1_45: 1010765818
+      Joyliday Separate 1_46: -495336527
+      Joyliday Separate 1_47: 735239894
+      Joyliday Separate 1_48: 1300155675
+      Joyliday Separate 1_49: -881659458
+      Joyliday Separate 1_5: -1217674118
+      Joyliday Separate 1_50: 1132385146
+      Joyliday Separate 1_51: -1931516882
+      Joyliday Separate 1_52: 968995427
+      Joyliday Separate 1_53: -1954873170
+      Joyliday Separate 1_54: -1096034007
+      Joyliday Separate 1_55: 1760957801
+      Joyliday Separate 1_56: 235086933
+      Joyliday Separate 1_57: 1733502744
+      Joyliday Separate 1_58: -1589906881
+      Joyliday Separate 1_59: 796308461
+      Joyliday Separate 1_6: -1468811956
+      Joyliday Separate 1_60: -875784239
+      Joyliday Separate 1_61: -91228691
+      Joyliday Separate 1_62: -1693731150
+      Joyliday Separate 1_63: 1469849822
+      Joyliday Separate 1_64: -2127493137
+      Joyliday Separate 1_65: 1001609242
+      Joyliday Separate 1_66: 1524525119
+      Joyliday Separate 1_67: -17098138
+      Joyliday Separate 1_68: 1550962643
+      Joyliday Separate 1_69: 1871492103
+      Joyliday Separate 1_7: -197590153
+      Joyliday Separate 1_70: -1756881742
+      Joyliday Separate 1_71: 1793047778
+      Joyliday Separate 1_72: 1520693324
+      Joyliday Separate 1_73: -1172109680
+      Joyliday Separate 1_74: 1335714513
+      Joyliday Separate 1_75: -473866235
+      Joyliday Separate 1_76: 2106026138
+      Joyliday Separate 1_77: -797250724
+      Joyliday Separate 1_78: 1933475403
+      Joyliday Separate 1_79: 2030448494
+      Joyliday Separate 1_8: 773047282
+      Joyliday Separate 1_80: 1381976027
+      Joyliday Separate 1_81: 1355044617
+      Joyliday Separate 1_82: 1194149797
+      Joyliday Separate 1_83: 1018718736
+      Joyliday Separate 1_84: 1282750149
+      Joyliday Separate 1_85: -1995665084
+      Joyliday Separate 1_86: 1915439589
+      Joyliday Separate 1_87: -1522115696
+      Joyliday Separate 1_88: -1097082919
+      Joyliday Separate 1_89: 2037695143
+      Joyliday Separate 1_9: -1664507308
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
