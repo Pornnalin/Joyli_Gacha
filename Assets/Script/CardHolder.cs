@@ -16,7 +16,7 @@ public class CardHolder : MonoBehaviour
 
     }
     public stepOpenCard currentStep;
-    public Slider slider;
+    public Scrollbar scroll;
     public GameObject cardHolderTop;
     public GameObject cardHolderDown;
     public GameObject lightLine;
@@ -78,7 +78,7 @@ public class CardHolder : MonoBehaviour
     }
     public void CloseHand()
     {
-        if (slider.value >= 1)
+        if (scroll.value >= 1)
         {
             arrowAndHand.SetActive(false);
             cardHolderTop.SetActive(false);
