@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class AnimationCardManager : MonoBehaviour
 {
@@ -11,16 +12,17 @@ public class AnimationCardManager : MonoBehaviour
         tutorialMove,
         AnimationCardOutHolder,
         AnimationTopAndDown,
+        ShowCard,
         End
 
     }
     public stepOpenCard currentStep;
-
     public CardAnimation cardAnimation;
     public CardHolder cardHolder;
     [SerializeField] private GameObject Card2dPrefab;
     [SerializeField] private RectTransform rectSpawn;
     public List<GameObject> allCard;
+    public Sprite[] allBg;
     private void Awake()
     {
         instance = this;

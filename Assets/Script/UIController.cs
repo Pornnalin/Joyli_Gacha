@@ -62,7 +62,7 @@ public class UIController : MonoBehaviour
                 }
             }
         }
-        if (howToPlay.activeInHierarchy || buy.activeInHierarchy || showReward.activeInHierarchy || reward.activeInHierarchy || collection.activeInHierarchy || openCard.activeInHierarchy)  
+        if (howToPlay.activeInHierarchy || buy.activeInHierarchy || showReward.activeInHierarchy || reward.activeInHierarchy || collection.activeInHierarchy)
         {
             foreach (Button go in optionChild)
             {
@@ -70,22 +70,27 @@ public class UIController : MonoBehaviour
 
             }
         }
-        //if (collection.activeInHierarchy || openCard.activeInHierarchy)
-        //{
-        //    foreach (Button go in optionChild)
-        //    {
-        //        if (go.gameObject.name != optionChildName[2])
-        //        {
-        //            go.gameObject.SetActive(true);
-        //        }
-        //        else
-        //        {
-        //            go.gameObject.SetActive(false);
-        //        }
-        //    }
-        //}
-
+        if (openCard.activeInHierarchy)
+        {
+            foreach (Button go in optionChild)
+            {
+                if (go.gameObject.name != optionChildName[2])
+                {
+                    go.gameObject.SetActive(true);
+                }
+                else
+                {
+                    go.gameObject.SetActive(false);
+                }
+            }
+        }
+        if (AnimationCardManager.instance.currentStep == AnimationCardManager.stepOpenCard.ShowCard)
+        {
+            menu.SetActive(false);
+            shopBg.SetActive(false);
+        }
     }
+    
    
     public void ActivePanel(GameObject objActive)
     {

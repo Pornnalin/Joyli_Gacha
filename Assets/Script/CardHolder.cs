@@ -8,25 +8,27 @@ using UnityEngine.UI;
 
 
 public class CardHolder : MonoBehaviour, IDragHandler
-{
-   
-    public Scrollbar scroll;
-    public Image cardHolderTop;
-    public Image cardHolderDown;
-    public Image lightLine;
-    public Image bg;
-    public Vector2 topTargetPos;
-    public float zRotTop;
+{   
+    [SerializeField] private Scrollbar scroll;
+    [SerializeField] private Image cardHolderTop;
+    [SerializeField] private Image cardHolderDown;
+    [SerializeField] private Image lightLine;
+    [SerializeField] private Vector2 topTargetPos;
+    [SerializeField] private float zRotTop;
+    [Header("BG")]
+    public Image bgFirst;
+    [SerializeField] private Image bgSec;   
     [Header("CardInside")]
     public GameObject cardInside;
-    public float yPosCardInside;
-    public Vector2 insideTargetPos;  
+    [SerializeField] private float yPosCardInside;
+    [SerializeField] private Vector2 insideTargetPos;  
     [Header("ArrowAndHand")]  
     [SerializeField] private GameObject arrowAndHand;
     [SerializeField] private RectTransform startArrow, targetArrow;
-   
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private Image lightBG;
+    [SerializeField] private GameObject framePanel;
+     // Start is called before the first frame update
+     void Start()
     {
         TutorialMove();
         AnimationCardManager.instance.currentStep = AnimationCardManager.stepOpenCard.tutorialMove;
@@ -71,7 +73,7 @@ public class CardHolder : MonoBehaviour, IDragHandler
         scroll.OnDrag(eventData);
     }
 
-    public void AnimationOpenCardHolder()
+    private void AnimationOpenCardHolder()
     {
         // cardHolderTop.SetActive(false);
         //   cardHolderDown.SetActive(false);
@@ -79,28 +81,56 @@ public class CardHolder : MonoBehaviour, IDragHandler
         LeanTween.alphaCanvas(canvasGroup, 0f, 0.5f).setEase(LeanTweenType.easeOutSine).setOnComplete(() =>
         {
             LeanTween.cancel(arrowAndHand);
+
             AnimationCardManager.instance.currentStep = AnimationCardManager.stepOpenCard.AnimationCardOutHolder;
             LeanTween.scale(lightLine.gameObject, new Vector2(1f, 1f), 0.1f).setEase(LeanTweenType.easeOutExpo).setOnComplete(() =>
             {
-                LeanTween.alpha(lightLine.rectTransform, 0, 0.7f).setEase(LeanTweenType.easeOutSine);
+                LeanTween.alpha(lightLine.rectTransform, 0, 1f).setEase(LeanTweenType.easeOutSine).setOnComplete(() =>
+                {
+                    LeanTween.cancel(lightLine.gameObject);
+                    lightLine.gameObject.SetActive(false);
+
+                });
+
                 AnimationTopCard();
             });
             arrowAndHand.SetActive(false);
 
         });
     }
-    public void AnimationTopCard()
+    private void AnimationTopCard()
     {
+        AnimationCardManager.instance.currentStep = AnimationCardManager.stepOpenCard.AnimationTopAndDown;
         LeanTween.moveLocal(cardHolderTop.gameObject, topTargetPos, 0.8f).setEase(LeanTweenType.easeOutQuad);
         LeanTween.rotateZ(cardHolderTop.gameObject, zRotTop, 0.8f).setEase(LeanTweenType.easeOutQuad).setOnComplete(() =>
         {
             LeanTween.alpha(cardHolderTop.rectTransform, 0, 1f).setEase(LeanTweenType.easeOutSine);
             LeanTween.alpha(cardHolderDown.rectTransform, 0, 0.7f).setEase(LeanTweenType.easeOutSine).setOnComplete(() =>
             {
-                LeanTween.moveLocal(cardInside.gameObject, insideTargetPos, 0.7f).setEase(LeanTweenType.easeOutQuad);
+                LeanTween.moveLocal(cardInside.gameObject, insideTargetPos, 0.7f).setEase(LeanTweenType.easeOutQuad).setOnComplete(() =>
+                {
+                    AnimationTwoBG();
+                });
 
             });
         });
         LeanTween.moveLocalY(cardInside, yPosCardInside, 0.7f).setEase(LeanTweenType.easeOutQuad); 
     }
+    private void AnimationTwoBG()
+    {
+        AnimationCardManager.instance.currentStep = AnimationCardManager.stepOpenCard.ShowCard;
+        LeanTween.alpha(bgFirst.rectTransform, 0, 1f).setEase(LeanTweenType.easeOutSine);
+        LeanTween.alpha(bgSec.rectTransform, 1, 0.8f).setEase(LeanTweenType.easeOutSine).setOnComplete(() =>
+        {
+            LeanTween.alpha(lightBG.rectTransform, 0.7f, 0.4f);
+            LeanTween.rotateAround(lightBG.gameObject, Vector3.forward, -360f,10f).setLoopClamp();
+            framePanel.SetActive(true);
+        });
+        SelectBG(1);
+    }
+    private void SelectBG(int index)
+    {
+        bgSec.sprite = AnimationCardManager.instance.allBg[index];
+    }
+
 }
