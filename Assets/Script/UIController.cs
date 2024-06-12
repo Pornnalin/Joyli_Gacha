@@ -1,7 +1,8 @@
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Reflection;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -25,6 +26,8 @@ public class UIController : MonoBehaviour
     [SerializeField] private Button[] optionChild;
     [SerializeField] private string[] optionChildName;
     [SerializeField] private GameObject currentPanel;
+
+    [SerializeField] private TextMeshProUGUI wordCatText;
     // Start is called before the first frame update
     void Start()
     {
@@ -88,6 +91,7 @@ public class UIController : MonoBehaviour
         {
             menu.SetActive(false);
             shopBg.SetActive(false);
+            wordCatText.text = "การ์ดที่ได้";
         }
     }
     
