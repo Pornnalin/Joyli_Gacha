@@ -59,18 +59,18 @@ public class CardAnimation : MonoBehaviour
     {
         //flip card 
         LeanTween.rotateLocal(backCard.gameObject, new Vector3(0, 90, 0), timeBack)
-           .setEase(LeanTweenType.easeInSine)
+           .setEase(LeanTweenType.easeOutQuad)
            .setOnComplete(() =>
            {
 
                LeanTween.rotateLocal(frontCard.gameObject, Vector3.zero, timeFront)
-                   .setEase(LeanTweenType.easeInSine).setOnComplete(() =>
+                   .setEase(LeanTweenType.easeOutQuad).setOnComplete(() =>
                    {
                        //move to slot
                        MoveCardToSlot();
                    });
 
-           }).setDelay(1f);
+           });
     }
 
     public void MoveCardToSlot()
@@ -80,11 +80,9 @@ public class CardAnimation : MonoBehaviour
             slotTarget = GameObject.Find("Frame").GetComponent<RectTransform>();
         }
 
-        LeanTween.move(cardGroup, slotTarget.position, 1f)
-           .setEase(LeanTweenType.easeInSine).setDelay(1f);
-           
+        LeanTween.move(cardGroup, new Vector2(slotTarget.position.x, slotTarget.position.y - 0.06f), 0.3f).setEase(LeanTweenType.easeOutSine).setDelay(1f);
 
-        LeanTween.size(frontCard, new Vector2(frontCard.rect.width / 3, frontCard.rect.height / 3), 1f).setEase(LeanTweenType.easeInSine).setDelay(1f);
+        LeanTween.size(frontCard, new Vector2(frontCard.rect.width / 3, frontCard.rect.height / 3), 0.8f).setEase(LeanTweenType.easeOutExpo).setDelay(1f);
 
     }
     [ContextMenu("debug")]

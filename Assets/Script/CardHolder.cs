@@ -46,12 +46,12 @@ public class CardHolder : MonoBehaviour, IDragHandler
     void TutorialMove()
     {
         CanvasGroup canvasGroup = arrowAndHand.GetComponent<CanvasGroup>();
-        LeanTween.moveLocalX(arrowAndHand, targetArrow.anchoredPosition.x, 1f).setOnComplete(() =>
+        LeanTween.moveLocalX(arrowAndHand, targetArrow.anchoredPosition.x, 0.4f).setOnComplete(() =>
         {
-            LeanTween.alphaCanvas(canvasGroup, 0f, 0.7f).setEase(LeanTweenType.linear);
-            LeanTween.moveLocalX(arrowAndHand, startArrow.anchoredPosition.x, 0.5f).setDelay(0.7f).setOnComplete(() =>
+            LeanTween.alphaCanvas(canvasGroup, 0f, 0.3f).setEase(LeanTweenType.easeOutQuad);
+            LeanTween.moveLocalX(arrowAndHand, startArrow.anchoredPosition.x, 0.5f).setDelay(0.2f).setOnComplete(() =>
             {
-                LeanTween.alphaCanvas(canvasGroup, 1f, 0.7f).setEase(LeanTweenType.linear).setOnComplete(() =>
+                LeanTween.alphaCanvas(canvasGroup, 1f, 0.5f).setEase(LeanTweenType.easeOutQuad).setOnComplete(() =>
                 {
                     TutorialMove();
 
@@ -76,12 +76,13 @@ public class CardHolder : MonoBehaviour, IDragHandler
     private void AnimationOpenCardHolder()
     {        
         CanvasGroup canvasGroup = arrowAndHand.GetComponent<CanvasGroup>();
+        
         LeanTween.alphaCanvas(canvasGroup, 0f, 0.5f).setEase(LeanTweenType.easeOutSine).setOnComplete(() =>
         {
             LeanTween.cancel(arrowAndHand);
 
             AnimationCardManager.instance.currentStep = AnimationCardManager.stepOpenCard.AnimationCardOutHolder;
-            LeanTween.scale(lightLine.gameObject, new Vector2(1f, 1f), 0.1f).setEase(LeanTweenType.easeOutExpo).setOnComplete(() =>
+            LeanTween.scale(lightLine.gameObject, new Vector2(1f, 1f), 0.05f).setEase(LeanTweenType.easeOutExpo).setOnComplete(() =>
             {
                 LeanTween.alpha(lightLine.rectTransform, 0, 1f).setEase(LeanTweenType.easeOutSine).setOnComplete(() =>
                 {
@@ -101,15 +102,15 @@ public class CardHolder : MonoBehaviour, IDragHandler
         GameObject cardInside = AnimationCardManager.instance.allCard[0];
         AnimationCardManager.instance.currentStep = AnimationCardManager.stepOpenCard.AnimationTopAndDown;
 
-        LeanTween.moveLocal(cardHolderTop.gameObject, topTargetPos, 0.8f).setEase(LeanTweenType.easeOutQuad);
-        LeanTween.rotateZ(cardHolderTop.gameObject, zRotTop, 0.8f).setEase(LeanTweenType.easeOutQuad).setOnComplete(() =>
+        LeanTween.moveLocal(cardHolderTop.gameObject, topTargetPos, 0.4f).setEase(LeanTweenType.easeOutExpo);
+        LeanTween.rotateZ(cardHolderTop.gameObject, zRotTop, 0.5f).setEase(LeanTweenType.easeOutQuad).setOnComplete(() =>
         {
-            LeanTween.alpha(cardHolderTop.rectTransform, 0, 1f).setEase(LeanTweenType.easeOutSine);
+            LeanTween.alpha(cardHolderTop.rectTransform, 0, 0.7f).setEase(LeanTweenType.easeOutSine);
             LeanTween.alpha(cardHolderDown.rectTransform, 0, 0.7f).setEase(LeanTweenType.easeOutSine).setOnComplete(() =>
             {
-                LeanTween.moveLocal(cardInside.gameObject, insideTargetPos, 0.7f).setEase(LeanTweenType.easeOutQuad).setOnComplete(() =>
+                LeanTween.moveLocal(cardInside.gameObject, insideTargetPos, 0.4f).setEase(LeanTweenType.easeOutQuad).setOnComplete(() =>
                 {
-                    LeanTween.scale(cardInside.gameObject, new Vector3(3, 3, 3), 0.7f).setEase(LeanTweenType.easeOutSine);
+                    LeanTween.scale(cardInside.gameObject, new Vector3(3, 3, 3), 0.6f).setEase(LeanTweenType.easeOutExpo);
                     AnimationTwoBG();
                 });
 
@@ -120,7 +121,9 @@ public class CardHolder : MonoBehaviour, IDragHandler
     }
     private void AnimationTwoBG()
     {
-        GameObject cardInside = AnimationCardManager.instance.allCard[1];
+        GameObject cardInside = AnimationCardManager.instance.allCard[0];
+        GameObject cardLeft = AnimationCardManager.instance.allCard[1];
+
         AnimationCardManager.instance.currentStep = AnimationCardManager.stepOpenCard.ShowBackCard;
         //two bg lerp
         LeanTween.alpha(bgFirst.rectTransform, 0, 0.6f).setEase(LeanTweenType.easeOutSine);
@@ -128,10 +131,11 @@ public class CardHolder : MonoBehaviour, IDragHandler
         {
             LeanTween.alpha(lightBG.rectTransform, 0.7f, 0.4f);
             LeanTween.rotateAround(lightBG.gameObject, Vector3.forward, -360f,10f).setLoopClamp();
-            LeanTween.moveLocalX(cardInside, AnimationCardManager.instance.rectSpawnSec.anchoredPosition.x, 0.7f).setEase(LeanTweenType.easeOutSine).setOnComplete(() =>
+            LeanTween.moveLocalX(cardLeft, AnimationCardManager.instance.rectSpawnSec.anchoredPosition.x, 0.7f).setEase(LeanTweenType.easeOutSine).setOnComplete(() =>
             {
                 cardInside.GetComponent<CardAnimation>().RotateCardOpen();
             });
+
             framePanel.SetActive(true);
         });
         SelectBG(1);

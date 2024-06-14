@@ -54,8 +54,8 @@ MonoBehaviour:
   frontCard: {fileID: 2220679517033340568}
   backCard: {fileID: 1994043253153096035}
   cardGroup: {fileID: 1392511804409232540}
-  timeBack: 0.7
-  timeFront: 0.5
+  timeBack: 0.2
+  timeFront: 0.1
   slotTarget: {fileID: 0}
 --- !u!1 &3869803783162964683
 GameObject:
