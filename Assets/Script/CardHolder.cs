@@ -33,7 +33,7 @@ public class CardHolder : MonoBehaviour, IDragHandler
      void Start()
     {
         TutorialMove();
-        AnimationCardManager.instance.currentStep = AnimationCardManager.stepOpenCard.tutorialMove;
+        AnimationCardManager.instance.currentStep = AnimationCardManager.stepOpenCard.TutorialMove;
         AnimationCardManager.instance.SpawnCard();
     }
 
@@ -121,14 +121,17 @@ public class CardHolder : MonoBehaviour, IDragHandler
     private void AnimationTwoBG()
     {
         GameObject cardInside = AnimationCardManager.instance.allCard[1];
-        AnimationCardManager.instance.currentStep = AnimationCardManager.stepOpenCard.ShowCard;
+        AnimationCardManager.instance.currentStep = AnimationCardManager.stepOpenCard.ShowBackCard;
         //two bg lerp
         LeanTween.alpha(bgFirst.rectTransform, 0, 0.6f).setEase(LeanTweenType.easeOutSine);
         LeanTween.alpha(bgSec.rectTransform, 1, 0.3f).setEase(LeanTweenType.easeOutSine).setOnComplete(() =>
         {
             LeanTween.alpha(lightBG.rectTransform, 0.7f, 0.4f);
             LeanTween.rotateAround(lightBG.gameObject, Vector3.forward, -360f,10f).setLoopClamp();
-            LeanTween.moveLocalX(cardInside, AnimationCardManager.instance.rectSpawnSec.anchoredPosition.x, 0.7f).setEase(LeanTweenType.easeOutSine);
+            LeanTween.moveLocalX(cardInside, AnimationCardManager.instance.rectSpawnSec.anchoredPosition.x, 0.7f).setEase(LeanTweenType.easeOutSine).setOnComplete(() =>
+            {
+                cardInside.GetComponent<CardAnimation>().RotateCardOpen();
+            });
             framePanel.SetActive(true);
         });
         SelectBG(1);

@@ -87,7 +87,7 @@ public class UIController : MonoBehaviour
                 }
             }
         }
-        if (AnimationCardManager.instance.currentStep == AnimationCardManager.stepOpenCard.ShowCard)
+        if (AnimationCardManager.instance.currentStep == AnimationCardManager.stepOpenCard.ShowBackCard)
         {
             menu.SetActive(false);
             shopBg.SetActive(false);

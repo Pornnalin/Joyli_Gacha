@@ -9,19 +9,18 @@ public class AnimationCardManager : MonoBehaviour
     public enum stepOpenCard
     {
         None,
-        tutorialMove,
+        TutorialMove,
         AnimationCardOutHolder,
         AnimationTopAndDown,
-        ShowCard,
-        FlipCard,
+        ShowBackCard,
+        ShowFrontCard,
         End
 
     }
     public stepOpenCard currentStep;
     public CardAnimation cardAnimation;
     public CardHolder cardHolder;
-    [SerializeField] private GameObject Card2dPrefab;
-    [SerializeField] private GameObject Card2dCloseXPrefab;
+    [SerializeField] private GameObject Card2dPrefab;  
     [SerializeField] private RectTransform rectSpawnFirst;
     public RectTransform rectSpawnSec;
     public List<GameObject> allCard;
@@ -43,20 +42,21 @@ public class AnimationCardManager : MonoBehaviour
     }
     public void SpawnCard()
     {
-        GameObject a = Instantiate(Card2dPrefab, rectSpawnFirst.anchoredPosition, Quaternion.identity);
-        a.transform.SetParent(rectSpawnFirst.transform.parent, false);
-        a.transform.SetSiblingIndex(rectSpawnFirst.GetSiblingIndex());
-        a.GetComponent<RectTransform>().localScale = new Vector2(2f, 2f);
+        GameObject one = Instantiate(Card2dPrefab, rectSpawnFirst.anchoredPosition, Quaternion.identity);
+        one.transform.SetParent(rectSpawnFirst.transform.parent, false);
+        one.transform.SetSiblingIndex(rectSpawnFirst.GetSiblingIndex());
+        one.GetComponent<RectTransform>().localScale = new Vector2(2f, 2f);
 
-        GameObject b = Instantiate(Card2dCloseXPrefab, rectSpawnSec.anchoredPosition, Quaternion.identity);
-        b.transform.SetParent(rectSpawnSec.transform.parent, false);
-        b.transform.SetSiblingIndex(rectSpawnSec.GetSiblingIndex());
-        b.GetComponent<RectTransform>().localScale = new Vector2(1.7f, 1.7f);
-        b.GetComponent<RectTransform>().localPosition = new Vector2(-1956f, -4f);
+        GameObject two = Instantiate(Card2dPrefab, rectSpawnSec.anchoredPosition, Quaternion.identity);
+        two.transform.SetParent(rectSpawnSec.transform.parent, false);
+        two.transform.SetSiblingIndex(rectSpawnSec.GetSiblingIndex());
+        two.GetComponent<RectTransform>().localScale = new Vector2(1.7f, 1.7f);
+        two.GetComponent<RectTransform>().localPosition = new Vector2(-1956f, -4f);
+        two.transform.GetChild(2).gameObject.SetActive(true);
     //    b.SetActive(false);
 
-        allCard.Add(a);
-        allCard.Add(b);
+        allCard.Add(one);
+        allCard.Add(two);
         
 
     }
